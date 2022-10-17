@@ -1,0 +1,108 @@
+/* page color */
+body {
+  background-color: rgb(14, 19, 31);
+  color: white;
+  font-family: Verdana, sans-serif;
+}
+/* heading color */
+h1 {
+  color: #ff0035;
+  font-size: 60px;
+  text-decoration: underline overline dotted red;
+}
+/* paragraph color */
+p {
+  font-size: 15px; /*absolute*/
+  line-height: 50px;
+}
+span.ex1 {
+  display: none;
+}
+span.ex2 {
+  display: inline;
+}
+span.ex3 {
+  display: block;
+}
+span.ex4 {
+  display: inline-block;
+}
+h2 {
+  font-size: 1cm; /*absolute*/
+  line-height: 15mm; /*absolute*/
+}
+h3 {
+  font-size: 1em; /*relative*/
+  line-height: 2ex; /*relative*/
+}
+ul,
+ol {
+  line-height: 3ex;
+}
+/* unvisited link */
+a:link {
+  color: #ff0000;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ff00ff;
+}
+
+/* selected link */
+a:active {
+  color: #0000ff;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+@media screen and (min-width: 900px) {
+  body {
+    background-color: black;
+  }
+}
+div p {
+  background-color: darkblue;
+}
+div + p {
+  background-color: darkmagenta;
+}
+h3 ~ ul {
+  background-color: rgb(17, 120, 116);
+}

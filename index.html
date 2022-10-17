@@ -1,199 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="description" content="Lab 2 Assignment HTML">
-    <meta name="author" content="Sebastian Pamudji">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Lab 2 Assignment HTML" />
+    <meta name="author" content="Sebastian Pamudji" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Minutes for Hiking Hours</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      div.border {
+        width: 320px;
+        padding: 10px;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 10%;
+        border-width: 10px;
+        margin-left: 10px; /* spacing between html elements */
+        margin-right: 10px;
+        padding-top: 10px; /* spacing within html elements */
+        padding-bottom: 10px;
+      }
+      div.static {
+        position: static;
+        border: 3px solid #73ad21;
+      }
+      div.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73ad21;
+        font-family: NotoSansEthiopic-VariableFont_wdth, wght;
+        src: url(/Noto_Sans_Ethiopic/NotoSansEthiopic-VariableFont_wdth\,wght.ttf);
+      }
+      fieldset {
+        margin: 25px 50px 25px 50px;
+        padding: 5px 5px 5px 5px;
+        border: 5px solid gray;
+      }
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        display: flex;
+        flex-grow: 4;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+      #para1 {
+        text-align: center;
+        color: red;
+      }
+      * {
+        size: 0em;
+      }
+      a[target] {
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
-    
     <header>
-        <h1>Team 12 Meeting Minutes</h1>
-        <h2>HTML Learning Experience</h2>
-        <h3>Date: 10/9/2222</h3>
+      <h1 style="text-align: center">Noshroom Meeting Minutes</h1>
+      <h2 style="text-align: center">HTML and CSS Testing</h2>
+      <h3>Date: 10/9/2222</h3>
     </header>
-    <hr> 
-    <!-- a title (e.g. "Pomodoro Timer First Brainstorm") -->
+    <hr />
     <main>
-        
-
-
-        <div>
-
-        </div>
-        <ul>
+      <ul>
+        <li>
+          <h3>Attendance</h3>
+          <ul>
+            <li>Linda</li>
+            <li>Lincoln</li>
+            <li>Linkin</li>
+            <li>Lim</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Agenda</h3>
+          <ol>
+            <li>Write HTML</li>
+            <li>Publish HTML</li>
+            <li>Admire HTML</li>
+            <li>Forget HTML</li>
+          </ol>
+        </li>
+        <li>
+          <h3>Unfinished Business</h3>
+          <ul>
             <li>
-                <h3>Attendance</h3>
-                <ul>
-                    <li>
-                        Linda
-                    </li>
-                    <li>
-                        Lincoln
-                    </li>
-                    <li>
-                        Linkin
-                    </li>
-                    <li>
-                        Lim
-                    </li>
-                </ul>
+              <b>None, <i>Good job!</i></b>
+            </li>
+            <li>Units missing one relative</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Finished Work</h3>
+          <ul>
+            <li>Comments</li>
+            <li>BG</li>
+            <li>text</li>
+            <li>box</li>
+          </ul>
+        </li>
+        <li>
+          <h3>New Business</h3>
+          <ul>
+            <li>
+              <strong>Important!, <em>We are in need of new ideas!</em></strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Miscellaneous</h3>
+          <ul>
+            <li>
+              <div class="relative">
+                <b>None, <i>Good job!</i></b>
+              </div>
             </li>
             <li>
-                <h3>Agenda</h3>
-                <ol>
-                    <li>
-                        Write HTML
-                    </li>
-                    <li>
-                        Publish HTML
-                    </li>
-                    <li>
-                        Admire HTML
-                    </li>
-                    <li>
-                        Forget HTML
-                    </li>
-                </ol>
+              <div class="static">
+                <p id="para1">Hello World!</p>
+                <p>
+                  Lorem ipsum dolor sit amet,<span class="ex1"
+                    >HELLO WORLD!</span
+                  >
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  <span class="ex2">HELLO WORLD!</span>quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate<span
+                    class="ex3"
+                    >HELLO WORLD!</span
+                  >
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  <span class="ex4">HELLO WORLD!</span>officia deserunt mollit
+                  anim id est laborum.
+                </p>
+              </div>
+              <p>This Webpage also scales to your phone screen! Neat.</p>
             </li>
-            <li>
-                <h3>Unfinished Business</h3>
-                <ul>
-                    <li>
-                        <b>None, <i>Good job!</i></b>
-                    </li>
-                </ul>
+          </ul>
+        </li>
 
-            </li>
-            <li>
-                <h3>New Business</h3>
-                <ul>
-                    <li>
-                        <strong>Important!, <em>We are in need of new ideas!</em></strong>
-                    </li>
-                </ul>
+        <li>
+          <h3>Images</h3>
+          <img src="diagrams.jpeg" alt="Diagram Sample" />
+        </li>
 
-            </li>
-            <li>
-                <h3>Miscellaneous</h3>
-                <ul>
-                    <li>
-                        <b>None, <i>Good job!</i></b>
+        <li>
+          <h3>Audio</h3>
+          <audio controls>
+            <source
+              src="mixkit-big-crowd-talking-loop-364.wav"
+              type="audio/wav"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </li>
 
-                    </li>
-                    <li>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-                            id est laborum.
-                        </p>
-                        <p>
-                            This Webpage also scales to your phone screen! Neat.
-                        </p>
-                    </li>
-                </ul>
+        <li>
+          <h3>Video</h3>
+          <div class="border">
+            <video width="320" height="240" controls>
+              <source src="Meeting.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </li>
 
-            </li>
-
-            <li>
-                <h3>Images</h3>
-                    <img src="diagrams.jpeg" alt="Diagram Sample">
-
-            </li>
-
-            <li>
-                <h3>Audio</h3>
-                    <audio controls>
-                        <source src="mixkit-big-crowd-talking-loop-364.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                      </audio>
-
-            </li>
-
-            <li>
-                <h3>Video</h3>
-                    <video width="320" height="240" controls>
-                        <source src="Meeting.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-
-            </li>
-        
-
-
-            <li>
-                <h3>Navigation</h3>
-                <nav>
-                    <span>
-                        <a href="/screenshots/">screenshots</a>
-                    </span>
-                </nav>
-            </li>
-        </ul>
+        <li>
+          <h3>Navigation</h3>
+          <nav>
+            <span>
+              <a href="/screenshots/">screenshots</a>
+              <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+            </span>
+          </nav>
+        </li>
+      </ul>
     </main>
     <section>
-        <h4>
-            Information
-        </h4>
-        <details>
-            <summary>About</summary>
-            <p>Image was taken from https://www.beautiful.ai/templates/pie-chart</p>
-            <p>Video was taken from https://www.pexels.com/search/videos/meeting/</p>
-            <p>Video was taken from https://mixkit.co/free-sound-effects/crowd/</p>
-
-        </details>
+      <h4>Information</h4>
+      <details>
+        <summary>About</summary>
+        <p>Image was taken from https://www.beautiful.ai/templates/pie-chart</p>
+        <p>
+          Video was taken from https://www.pexels.com/search/videos/meeting/
+        </p>
+        <p>Video was taken from https://mixkit.co/free-sound-effects/crowd/</p>
+      </details>
     </section>
-    
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <div class="grid-container">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
     <form action="/action_page.php">
-        <fieldset>
-            <legend>
-                Extra form
-            </legend>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="browser">Choose your browser from the list:</label><br>
-            <input list="browsers" name="browser" id="browser"><br>
-            <datalist id="browsers">
-              <option value="Edge">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
-            </datalist>
-            <label for="cars">Choose a car:</label>
-            <select name="cars" id="cars">
-              <option value="select">Select</option>
-              <option value="honda">Honda</option>
-              <option value="toyota">Toyota</option>
-              <option value="audi">Audi</option>
-              <option value="BMW">BMW</option>
-            </select>
-            <br><br>
-            <button type="button">Click Me!</button><br>
-            <label for="fname">Is this correct:</label><br>
-            <input type="checkbox" id="fcheck" name="fcheck" ><br>
-            <label for="fname">Are you sure:</label><br>
-            <input type="radio" id="fradio" name="fradio" ><br>
-            <label for="fname">Sign date:</label><br>
-            <input type="date" id="fdate" name="fdate" ><br>
-            <label for="review">Additional Comments:</label><br>
-            <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
-            <input type="submit" value="Submit"><br>
-        </fieldset>
-      </form>
-      <hr>
-    <footer>
-        Author: Sebastian Pamudji
-    </footer>
+      <fieldset>
+        <legend>Extra form</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="browser">Choose your browser from the list:</label><br />
+        <input list="browsers" name="browser" id="browser" /><br />
+        <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="select">Select</option>
+          <option value="honda">Honda</option>
+          <option value="toyota">Toyota</option>
+          <option value="audi">Audi</option>
+          <option value="BMW">BMW</option>
+        </select>
+        <br /><br />
+        <button type="button">Click Me!</button><br />
+        <label for="fname">Is this correct:</label><br />
+        <input type="checkbox" id="fcheck" name="fcheck" /><br />
+        <label for="fname">Are you sure:</label><br />
+        <input type="radio" id="fradio" name="fradio" /><br />
+        <label for="fname">Sign date:</label><br />
+        <input type="date" id="fdate" name="fdate" /><br />
+        <label for="review">Additional Comments:</label><br />
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br />
+        <input type="submit" value="Submit" /><br />
+      </fieldset>
+    </form>
+    <hr />
+    <footer>Author: Sebastian Pamudji</footer>
   </body>
-
- 
-
 </html>
